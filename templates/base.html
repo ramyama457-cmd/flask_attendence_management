@@ -1,5 +1,16 @@
-{%- block content -%}
+base.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body>
     {% include 'Header.html' %}
     {% block body %}{% endblock %}
     {% include 'Footer.html' %}
-{%- endblock -%}
+</body>
+</html>

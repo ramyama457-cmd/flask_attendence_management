@@ -7,6 +7,10 @@
     <h1>Welcome to the Attendance Management System</h1>
     <p>This is the Signup page of our application. Here you can find information about our system and its features.</p>
 
+
+    {% if error %}
+    <p style="color: red;">{{error}}</p>
+    {% endif %}
     <form method="POST" action="/signup">
         <p>
             <label for="name">Name</label>
